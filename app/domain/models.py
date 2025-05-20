@@ -15,7 +15,7 @@ class Task(BaseModel):
     id: UUID = Field(default_factory=uuid4)
     title: Annotated[
         str,
-        Field(min_length=1, example="Buy milk", description="Заголовок задачи")
+            Field(min_length=1, example="Buy milk", description="Заголовок задачи")
     ]
     description: Annotated[
         str | None,

@@ -15,8 +15,12 @@ class TaskRepositoryImpl(TaskRepository):
         tasks_storage[task.id] = task
         return task
 
-    async def get(self, task_id: UUID) -> Optional[Task]:
+    async def get(self, task_id: UUID | str) -> Optional[Task]:
         """Получить задачу по ID"""
+
+        if isinstance(task_id, str):
+            task_id = UUID(task_id)
+
         return tasks_storage.get(task_id)
 
     async def get_all(self) -> List[Task]:
