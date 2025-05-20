@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from typing import List, Optional
 from uuid import UUID
 
-from domain.models import Task, TaskCreate, TaskUpdate, OperationStatus
+from models import Task, TaskCreate, TaskUpdate, OperationStatus
 
 
 class TaskRepository(ABC):
