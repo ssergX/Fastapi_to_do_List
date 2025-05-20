@@ -1,9 +1,9 @@
 from typing import List, Optional
 from uuid import UUID
 
-from domain.interfaces import TaskRepository
-from domain.models import Task, TaskCreate, TaskUpdate
 
+from ..domain.interfaces import TaskRepository
+from ..domain.models import Task, TaskCreate, TaskUpdate
 
 class TaskService:
 

@@ -1,6 +1,5 @@
 from fastapi import APIRouter, BackgroundTasks, HTTPException, Path
 from typing import List
-from pydantic import Field
 
 from app.api.dependencies import OperationServiceDep
 from app.domain.models import OperationStatus

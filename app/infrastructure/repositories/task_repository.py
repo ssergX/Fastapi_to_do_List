@@ -1,9 +1,9 @@
 from typing import List, Optional
 from uuid import UUID
 
-from domain.interfaces import TaskRepository
-from domain.models import Task, TaskCreate, TaskUpdate
-from infrastructure.storage.in_memory_storage import tasks_storage
+from app.domain.interfaces import TaskRepository
+from app.domain.models import Task, TaskCreate, TaskUpdate
+from app.infrastructure.storage.in_memory_storage import tasks_storage
 
 
 class TaskRepositoryImpl(TaskRepository):

@@ -1,10 +1,10 @@
 from typing import Annotated
 from fastapi import Depends
 
-from infrastructure.repositories.task_repository import TaskRepositoryImpl
-from infrastructure.repositories.operation_repository import OperationRepositoryImpl
-from services.task_service import TaskService
-from services.operation_service import OperationService
+from app.infrastructure.repositories.task_repository import TaskRepositoryImpl
+from app.infrastructure.repositories.operation_repository import OperationRepositoryImpl
+from app.services.task_service import TaskService
+from app.services.operation_service import OperationService
 
 # Создаем синглтоны репозиториев
 task_repository = TaskRepositoryImpl()

@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from api.routes import tasks, operations
+from . import tasks, operations
 
 api_router = APIRouter()
 api_router.include_router(tasks.router)

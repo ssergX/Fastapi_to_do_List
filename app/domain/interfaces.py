@@ -2,8 +2,7 @@ from abc import ABC, abstractmethod
 from typing import List, Optional
 from uuid import UUID
 
-from models import Task, TaskCreate, TaskUpdate, OperationStatus
-
+from app.domain.models import Task, TaskCreate, TaskUpdate, OperationStatus
 
 class TaskRepository(ABC):
     """Интерфейс репозитория для работы с задачами"""
