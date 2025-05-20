@@ -1,9 +1,9 @@
 from typing import Optional, List
 from uuid import UUID
 
-from app.domain.interfaces import OperationRepository
-from app.domain.models import OperationStatus
-from app.infrastructure.storage.in_memory_storage import operations_storage
+from domain.interfaces import OperationRepository
+from domain.models import OperationStatus
+from infrastructure.storage.in_memory_storage import operations_storage
 
 
 class OperationRepositoryImpl(OperationRepository):

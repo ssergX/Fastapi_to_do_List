@@ -1,7 +1,7 @@
 from typing import Dict
 from uuid import UUID
 
-from app.domain.models import Task, OperationStatus
+from domain.models import Task, OperationStatus
 
 tasks_storage: Dict[UUID, Task] = {}
 

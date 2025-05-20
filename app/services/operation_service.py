@@ -4,8 +4,8 @@ from uuid import UUID
 
 from fastapi import BackgroundTasks
 
-from app.domain.interfaces import OperationRepository
-from app.domain.models import OperationStatus, Status
+from domain.interfaces import OperationRepository
+from domain.models import OperationStatus, Status
 
 
 class OperationService:
