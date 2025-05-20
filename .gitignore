@@ -40,7 +40,6 @@ htmlcov/
 
 .mypy_cache/
 
-poetry.lock
 
 .env.local
 .env.development.local
